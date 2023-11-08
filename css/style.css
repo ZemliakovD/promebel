@@ -791,6 +791,10 @@ ul, ol{
     letter-spacing: 0.15px;
 }
 
+.raschet{
+    margin-bottom: 64px;
+}
+
 .about{
     margin-bottom: 130px;
 }
