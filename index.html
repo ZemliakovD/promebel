@@ -19,6 +19,29 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Marquiz script start -->
+  <script>
+    (function (w, d, s, o) {
+      var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js'; j.onload = function () {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function () {
+          Marquiz.init(o);
+        });
+      };
+      d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+      host: '//quiz.marquiz.ru',
+      region: 'eu',
+      id: '654b9f3167a40a0025988720',
+      autoOpen: false,
+      autoOpenFreq: 'once',
+      openOnExit: false,
+      disableOnMobile: false
+    }
+    );
+  </script>
+  <!-- Marquiz script end -->
 </head>
 
 <body>
@@ -38,7 +61,6 @@
             <div class="header-top-right">
               <p><a href="#">О нас</a></p>
               <p><a href="#">Оплата и доставка</a></p>
-              <p><a href="#">Для бизнеса</a></p>
             </div>
           </div>
           <div class="header-middle">
@@ -46,32 +68,27 @@
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Каталог</button>
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Каталог мебели</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Комнаты</button>
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Кухни</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                    type="button" role="tab" aria-controls="contact-tab-pane"
-                    aria-selected="false">Дизайн-проекты</button>
+                  <a href="#">Дизайн-проекты</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-                    type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Мебель на
-                    заказ</button>
+                  <a href="#">Акции</a>
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                   tabindex="0">
                   <ul>
-                    <li><a href="#">Мебель</a></li>
-                    <li><a href="#">Фурнитура и комплектующие</a></li>
-                    <li><a href="#">Товары для дома</a></li>
-                    <li><a href="#">Плитка, керамогранит и мозаика</a></li>
-                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Спальня</a></li>
+                    <li><a href="#">Прихожая</a></li>
+                    <li><a href="#">Кухня</a></li>
+                    <li><a href="#">Ванная</a></li>
                   </ul>
                 </div>
               </div>
@@ -98,14 +115,13 @@
         <div class="container">
           <div class="main-inner">
             <div class="main-content">
+              <video src="img/video/video_1.mp4" type="video/mp4" autoplay muted loop></video>
+              <div class="overlay"></div>
               <div class="main-content-text">
                 <h1>Мебель и интерьеры на заказ</h1>
                 <p>Мы стремимся к европейскому качеству, поэтому используем фасады и элементы декора, созданные
                   итальянскими дизайнерами </p>
                 <a href="#" class="button">Подробнее</a>
-              </div>
-              <div class="main-content-banner">
-                <img src="img/main_banner.png" alt="Мебель на заказ">
               </div>
             </div>
           </div>
@@ -119,8 +135,8 @@
         <div class="container">
           <div class="rooms-inner">
             <div class="rooms-inner-top">
-              <h2>Каталог по комнатам</h2>
-              <a href="#">Все комнаты</a>
+              <h2>Каталог мебели</h2>
+              <a href="#">Полный каталог</a>
             </div>
             <div class="rooms-content">
               <div class="rooms-cards">
@@ -161,50 +177,8 @@
       <div class="col-12">
         <div class="container">
           <div class="popular-inner">
-            <div class="popular-inner-top">
-              <h2>Популярные категории</h2>
-              <a href="#">Все категории</a>
-            </div>
-            <div class="popular-content">
-              <div class="poular-item">
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/kresla.png" alt="Популярные категории">
-                  </div>
-                  <p>Кресла</p>
-                </div>
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/stol.png" alt="Популярные категории">
-                  </div>
-                  <p>Столы</p>
-                </div>
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/stulia.png" alt="Популярные категории">
-                  </div>
-                  <p>Стулья</p>
-                </div>
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/shkaf.png" alt="Популярные категории">
-                  </div>
-                  <p>Шкафы</p>
-                </div>
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/krovat.png" alt="Популярные категории">
-                    <p>Кровати</p>
-                  </div>
-                </div>
-                <div class="popular-card">
-                  <div class="popular-card-inner">
-                    <img src="img/popular/divan.png" alt="Популярные категории">
-                  </div>
-                  <p>Диваны</p>
-                </div>
-              </div>
-            </div>
+            <div data-marquiz-id="654b9f3167a40a0025988720"></div>
+            <script>(function (t, p) { window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () { Marquiz.add([t, p]) }) })('Inline', { id: '654b9f3167a40a0025988720', buttonText: 'Получить скидку', bgColor: '#000000', textColor: '#ffffff', buttonOnMobile: true })</script>
           </div>
         </div>
       </div>
@@ -251,8 +225,8 @@
         <div class="container">
           <div class="best-inner">
             <div class="best-inner-top">
-              <h2>Лучшие предложения</h2>
-              <a href="#">Все предложения</a>
+              <h2>Лучшие проекты</h2>
+              <a href="#">Все проекты</a>
             </div>
             <div class="best-cards">
               <div class="best-item">
@@ -701,14 +675,38 @@
     </div>
   </section>
 
+  <section class="order">
+    <div class="row">
+      <div class="col-12">
+        <div class="container">
+          <div class="order-inner">
+            <div class="order-info">
+              <h2>Есть сомнения?</h2>
+              <p>Оставьте Ваши контактные данные и мы детально обсудим проект</p>
+            </div>
+            <div class="order-action">
+              <form class="order-form">
+                <input type="text" class="form-control" placeholder="Имя"  aria-label="Имя">
+                <input type="text" class="form-control" placeholder="Фамилия"  aria-label="Фамилия">
+                <input type="phone" class="form-control" placeholder="Телефон"  aria-label="Телефон">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
+                <button type="submit" class="btn btn-primary">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="collection">
     <div class="row">
       <div class="col-12">
         <div class="container">
           <div class="collection-inner">
             <div class="collection-inner-top">
-              <h2>Коллекция плитки</h2>
-              <a href="#">Вся коллекция</a>
+              <h2>Акции и спецпредложения</h2>
+              <a href="#">Все акции</a>
             </div>
             <div class="collection-content">
               <div class="collection-item">
@@ -832,38 +830,46 @@
     </div>
   </section>
 
+  <section class="raschet">
+    <div class="row">
+      <div class="col-12">
+        <div class="container">
+          <div class="raschet-inner">
+            <div data-marquiz-id="654bb4137c73ff002522eec0"></div>
+            <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '654bb4137c73ff002522eec0', buttonText: 'Пройти тест', bgColor: '#d34085', textColor: '#ffffff', buttonOnMobile: true})</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="about">
     <div class="row">
       <div class="col-12">
         <div class="container">
           <div class="about-inner">
-            <h2>Раздел о производстве</h2>
+            <h2>Больше о нас</h2>
             <p>Мы стремимся к европейскому качеству, поэтому используем фасады
               и элементы декора, созданные итальянскими дизайнерами и произведенные
               на ведущих фабриках Италии. </p>
             <div class="about-content">
+              <div class="about-info">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
               <div class="about-slider">
                 <div class="about-slider-item">
-                  <video>
-                    <source src="img/video/video_1.mp4" type="video/mp4" autoplay>
-                    <!-- <source src="movie.ogg" type="video/ogg"> -->
-                  </video>
+                  <video src="img/video/video_1.mp4" type="video/mp4" autoplay muted loop></video>
                 </div>
                 <div class="about-slider-item">
-                  <video>
-                    <source src="img/video/video_2.mp4" type="video/mp4" autoplay>
-                    <!-- <source src="movie.ogg" type="video/ogg"> -->
-                  </video>
+                  <video src="img/video/video_2.mp4" type="video/mp4" autoplay muted loop></video>
                 </div>
                 <div class="about-slider-item">
-                  <video>
-                    <source src="img/video/video_3.mp4" type="video/mp4" autoplay>
-                    <!-- <source src="movie.ogg" type="video/ogg"> -->
-                  </video>
+                  <video src="img/video/video_3.mp4" type="video/mp4" autoplay muted loop></video>
                 </div>
               </div>
             </div>
-            <a href="#">Больше о нас</a>
+            <a href="#">Читать подробнее</a>
           </div>
         </div>
       </div>
@@ -880,23 +886,17 @@
                 <div class="footer-menu-left">
                   <p>Каталог</p>
                   <ul>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Мебель</a></li>
-                    <li><a href="#">Список комнат</a></li>
-                    <li><a href="#">Товары для дома</a></li>
-                    <li><a href="#">Фурнитура и комплектующие</a></li>
-                    <li><a href="#">Плитка, керамогранит и мозаика</a></li>
+                    <li><a href="#">Спальни</a></li>
+                    <li><a href="#">Кухни</a></li>
+                    <li><a href="#">Полный каталог</a></li>
                   </ul>
                 </div>
                 <div class="footer-menu-right">
                   <p>Покупателю</p>
                   <ul>
-                    <li>Мебель на заказ</li>
-                    <li>Дизайн-проекты</li>
-                    <li>Наши салоны</li>
+                    <li>Акции и спецпредложения</li>
                     <li>Оплата и доставка</li>
                     <li>О нас</li>
-                    <li>Для бизнеса</li>
                   </ul>
                 </div>
               </div>
@@ -905,9 +905,9 @@
               <div class="footer-about">
                 <p>Контакты</p>
                 <div class="footer-contacts">
-                  <p>Единая справочная:</p>
+                  <p>Телефон для консультации:</p>
                   <a href="tel:+375291234567">+375 (29) 123-45-67</a>
-                  <p>Режим работы: с 02:00 до 23:00</p>
+                  <p>Режим работы: с 08:00 до 20:00</p>
                 </div>
                 <div class="footer-social">
                   <p>Присоединяйтесь к нам в социальных сетях</p>
@@ -942,10 +942,10 @@
         <div class="container">
           <div class="politics-inner">
             <div class="politics">
-              <p>© 2020 Alpina Market. All rights reserved</p>
+              <p>© 2023 M-SI-M.BY Все права защищены</p>
               <a href="#">Политика конфиденциальности</a>
             </div>
-            <p>Developed by Legacystudio</p>
+            <p>Developed by Studio X-DEV</p>
           </div>
         </div>
       </div>

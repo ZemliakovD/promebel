@@ -6,7 +6,16 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="rooms-prev"><i class="fa-solid fa-arrow-left fa-beat" style="color: #000000;"></i></button>',
-        nextArrow: '<button type="button" class="rooms-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>'
+        nextArrow: '<button type="button" class="rooms-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>',
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
 
       $('.mebel-content-gallery').slick({
@@ -15,16 +24,34 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="mebel-prev"><i class="fa-solid fa-arrow-left fa-beat" style="color: #000000;"></i></button>',
-        nextArrow: '<button type="button" class="mebel-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>'
+        nextArrow: '<button type="button" class="mebel-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>',
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
 
       $('.about-slider').slick({
-        slidesToShow: 2,
+        slidesToShow:  1,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 2000,
         prevArrow: '<button type="button" class="about-prev"><i class="fa-solid fa-arrow-left fa-beat" style="color: #000000;"></i></button>',
-        nextArrow: '<button type="button" class="about-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>'
+        nextArrow: '<button type="button" class="about-next"><i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i></button>',
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
 
 });
